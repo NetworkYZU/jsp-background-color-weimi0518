@@ -10,10 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <meta http-equiv="refresh" content="1">
     </head>
     <%
         String color="blue";
-        String [] colors=new String[]{"blue", "gray", "pink", "orange", "brown", "yellow"};
+        String [] colors=new String[]{"skyblue", "gray", "pink", "orange", "brown", "green"};
         String parameter=request.getParameter("color");
         if(parameter!=null){
             color=parameter;
