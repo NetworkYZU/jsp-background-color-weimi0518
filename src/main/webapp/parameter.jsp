@@ -13,9 +13,13 @@
     </head>
     <%
         String color="blue";
+        String [] colors=new String[]{"blue", "gray", "pink", "orange", "brown", "yellow"};
         String parameter=request.getParameter("color");
         if(parameter!=null){
             color=parameter;
+        }
+        else{
+            color=colors[(int)(Math.random()*1000%colors.length)];
         }
     %>
     <body bgcolor="<%=color%>">
